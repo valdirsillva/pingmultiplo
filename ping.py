@@ -1,5 +1,5 @@
 import os
-
+import time
 
 
 with open('hosts.txt') as file:
@@ -12,6 +12,6 @@ with open('hosts.txt') as file:
         print('-'*60)
         
         os.system('ping -n 2 {} '.format(ip))
-        
+              
         print('-'*60)
-        print(ip)
+        time.sleep(3)
